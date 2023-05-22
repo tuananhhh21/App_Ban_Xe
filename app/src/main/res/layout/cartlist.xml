@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên thức uống"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/drinkNameinOrderSummary"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/drinkNameinOrderSummary"
+        android:text="x"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/quantityinOrderSummary"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkNameinOrderSummary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#E56690"
+        android:text="Giá: 20,000"
+        android:textSize="15sp"
+        android:id="@+id/priceinOrderSummary"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/drinkNameinOrderSummary"
+        android:layout_alignParentRight="true"
+        android:text="Hủy"
+        android:textSize="15sp"
+        android:background="#445C65"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btn_Huy"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btn_Huy"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

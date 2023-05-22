@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context=".InfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewInfo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/anh1" />
+
+        <TextView
+            android:id="@+id/drinkNameinInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewInfo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Ứng dụng bán xe máy online"
+            android:textColor="#0D8CE7"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drinkNameinInfo"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Tên người dùng: " />
+
+            <EditText
+                android:id="@+id/edt_Name"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:ems="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_Name"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Email người dùng: " />
+
+            <EditText
+                android:id="@+id/edt_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user@gmail.com"
+                android:textSize="16sp"
+                android:ems="8" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clickmuahang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_Email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#0D8CE7"
+            android:gravity="center"
+            android:text="Trải nghiệm ứng dụng"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
